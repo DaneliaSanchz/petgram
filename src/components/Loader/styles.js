@@ -28,9 +28,9 @@ const loadingCircle = keyframes`
 `
 
 const dashValue = (radius, decimalPercentage) => {
-  const circumference = 2 * Math.PI * radius;
-  return circumference * decimalPercentage;
-};
+  const circumference = 2 * Math.PI * radius
+  return circumference * decimalPercentage
+}
 
 export const Circle = styled.circle`
   fill: transparent;
@@ -41,8 +41,8 @@ export const Circle = styled.circle`
   stroke-width: ${props => (50 - props.r) * 2};
   animation: 1.4s ease-in-out infinite both ${loadingCircle};
   transform-origin: 50% 50%;
-`;
+`
 
 export const Svg = styled.svg`
   animation: 2s linear infinite ${loadingSvg};
-`;
+`

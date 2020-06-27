@@ -3,6 +3,7 @@ import { Category } from '../Category'
 
 import { List, Item } from './styles'
 import { Loader } from '../Loader'
+
 function useCategoriesData () {
   const [categories, setCategories] = useState([])
   const [loading, setLoading] = useState(false)
